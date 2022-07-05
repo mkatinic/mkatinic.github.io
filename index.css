@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #659DBD;
+    height: 80px;
+}
+
+.navbar--items {
+    padding-left: 5%;
+    padding-top: 25px;
+}
+
+.navbar--name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.navbar--link img {
+    padding-left: 10px;
+    height: 30px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    vertical-align: top;
+}
+
+
+
+.profile {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    height: 350px;
+    width: 100%;
+    background-color: #FBEEC1;
+}
+
+.profile--image {
+    padding-top: 20px;
+}
+
+.profile--image img {
+    height: 150px;
+    border: 2px solid #838383;
+    border-radius: 50%;
+}
+
+.profile--name {
+    display: block;
+    color: #838383;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.profile hr {
+    display: block;
+    width: 10%;
+    height: 3px;
+    background-color: #838383;
+    border-style: none;
+    margin-top: 20px;
+}
+
+.profile--bio {
+    display: block;
+    color: #838383;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+
+
+.main {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.main--about-title {
+    font-size: 1.6em;
+    color: #659DBD;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+.main hr {
+    display: block;
+    width: 130px;
+    height: 3px;
+    background-color: #659DBD;
+    border-style: none;
+}
+
+.main--about-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #838383;
+}
+
+.main--technology-title {
+    font-size: 1.3em;
+    color: #659DBD;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.main--technology-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #838383;
+    text-align: center;
+}
+
+.main--technology-text ul {
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+.projects {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.projects--title {
+    font-size: 1.6em;
+    color: #659DBD;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects hr {
+    display: block;
+    width: 130px;
+    height: 3px;
+    background-color: #659DBD;
+    border-style: none;
+}
+
+.projects--details {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #838383;
+    text-align: center;
+}
+
+.projects--button {
+    content: url(images/dropDown.png);
+    height: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.projects--details-title {
+    font-size: 1.3em;
+    color: #659DBD;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    display: none;
+}
+
+.projects--details-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #838383;
+    margin-top: 10px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+.projects--details-text a {
+    color: #659DBD;
+}
+
+.click:hover {
+    cursor: pointer;
+}
+
+
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #659DBD;
+    margin-top: 40px;
+}
+
+.footer--items {
+    text-align: center;
+}
+
+.footer--link img {
+    height: 50px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    padding-left: 10px;
+    padding-top: 15px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Markan Katinic</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="navbar--items">
+                    <span class="navbar--name">Markan Katinic</span>
+                    <span class="navbar--link">
+                        <a href="mailto:mwkatinic@gmail.com"><img class="icon" src="images/mail.webp" alt="email"></a>
+                    </span>
+                    <span class="navbar--link">
+                        <a href="https://www.linkedin.com/in/markan-katinic-4175321bb"><img class="icon" src="images/linkedin.png" alt="linkedin"></a>
+                    </span>
+                    <span class="navbar--link">
+                        <a href="https://github.com/mkatinic?tab=repositories"><img class="icon" src="images/github.png" alt="github"></a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="profile--image">
+                    <img src="images/profile.JPG" height="50px" alt="profile picture">
+                </div>
+                <div class="profile--name">
+                    Markan Katinic
+                </div>
+                <hr>
+                <div class="profile--bio">
+                    Diploma in Computer Studies, <br> Langara College
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="main--about-title">
+                    About Me
+                </div>
+                <hr>
+                <div class="main--about-text">
+                    I recently graduated with a Computer Studies Diploma from Langara College, and I am excited to begin my career as a software developer. Langara has 
+                    taught me various technologies, and I consider myself adept in C++, Java, JavaScript, Data Structures and Algorithms, and front end development.
+                    I am extremely passionate about computer science and I try to seize every oppourtunity to learn and better myself as a developer. Unfortunately 
+                    I do not have any work experience in the industry yet, the majority of work experience I do have has been in the trades. Spending years working up 
+                    north was essential in developing my tenacious work ethic which is something I take with me everywhere I go.
+                </div>
+                <div class="main--technology-title">
+                    Technologies I've Been Using Recently
+                </div>
+                <div class="main--technology-text">
+                    <ul>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="projects--title">
+                    Personal Projects
+                </div>
+                <hr>
+                <div class="projects--wrapper">
+                    <a href="https://mkatinic.github.io/Sorting-Visualizer/"><img src="images/barGraph.webp" alt="bar graph"></a>
+                </div>
+                <div class="projects--details">
+                    <div class="click">More About This Project <i class="projects--button"></i></div>
+                    <div class="projects--details-title">
+                        About the Project
+                    </div>
+                    <div class="projects--details-text">
+                        This project visualizes the steps different sorting algorithms take while running. I chose this project because I have been teaching myself React 
+                        and I wanted to put everyting I have been learning to use. All of the code was written by myself and it is hosted on Github pages, you can find the 
+                        app by clicking the image above or through the link here: <a href="https://mkatinic.github.io/Sorting-Visualizer/">mkatinic.github.io/Sorting-Visualizer/</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer--items">
+                    <span class="footer--link">
+                        <a href="mailto:mwkatinic@gmail.com"><img class="icon" src="images/mail.webp" alt="email"></a>
+                    </span>
+                    <span class="footer--link">
+                        <a href="https://www.linkedin.com/in/markan-katinic-4175321bb"><img class="icon" src="images/linkedin.png" alt="linkedin"></a>
+                    </span>
+                    <span class="footer--link">
+                        <a href="https://github.com/mkatinic?tab=repositories"><img class="icon" src="images/github.png" alt="github"></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $(".click").click(function(){
+            if($(".projects--details-title").css("display") == "none"){
+                $(".projects--details-title").fadeIn(500);
+                $(".projects--details-text").fadeIn(500);
+                $(".projects--button").css("transform", "rotate(" + 180 + "deg)");
+            }else {
+                $(".projects--details-title").fadeOut(500);
+                $(".projects--details-text").fadeOut(500);
+                $(".projects--button").css("transform", "rotate(" + 0 + "deg)");
+            }
+        })
+    })
+</script>
