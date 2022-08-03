@@ -1,9 +1,16 @@
+:root {
+    --backgroundColor1: #557A95;
+    --backgroundColor2: #969289;
+    --accentColor: #FFFFFF;
+    --textColor: #838383;
+}
+
 body {
     margin: 0;
 }
 
 .navbar {
-    background-color: #659DBD;
+    background-color: var(--backgroundColor1);
     height: 80px;
 }
 
@@ -15,7 +22,7 @@ body {
 .navbar--name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
-    color: white;
+    color: var(--accentColor);
 }
 
 .navbar--link img {
@@ -34,7 +41,7 @@ body {
     text-align: center;
     height: 350px;
     width: 100%;
-    background-color: #FBEEC1;
+    background-color: var(--backgroundColor2);
 }
 
 .profile--image {
@@ -43,13 +50,13 @@ body {
 
 .profile--image img {
     height: 150px;
-    border: 2px solid #838383;
+    border: 2px solid var(--accentColor);
     border-radius: 50%;
 }
 
 .profile--name {
     display: block;
-    color: #838383;
+    color: var(--accentColor);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
@@ -58,14 +65,14 @@ body {
     display: block;
     width: 10%;
     height: 3px;
-    background-color: #838383;
+    background-color: var(--accentColor);
     border-style: none;
     margin-top: 20px;
 }
 
 .profile--bio {
     display: block;
-    color: #838383;
+    color: var(--accentColor);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     margin-top: 20px;
@@ -81,7 +88,7 @@ body {
 
 .main--about-title {
     font-size: 1.6em;
-    color: #659DBD;
+    color: var(--backgroundColor1);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 30px;
@@ -91,7 +98,7 @@ body {
     display: block;
     width: 130px;
     height: 3px;
-    background-color: #659DBD;
+    background-color: var(--backgroundColor1);
     border-style: none;
 }
 
@@ -99,12 +106,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     font-size: 1.1em;
-    color: #838383;
+    color: var(--textColor);
 }
 
 .main--technology-title {
     font-size: 1.3em;
-    color: #659DBD;
+    color: var(--backgroundColor1);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
@@ -113,7 +120,7 @@ body {
 .main--technology-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    color: #838383;
+    color: var(--textColor);
     text-align: center;
 }
 
@@ -129,9 +136,13 @@ body {
     margin-top: 30px;
 }
 
+.projects--wrapper {
+    margin-top: 30px;
+}
+
 .projects--title {
     font-size: 1.6em;
-    color: #659DBD;
+    color: var(--backgroundColor1);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -140,36 +151,36 @@ body {
     display: block;
     width: 130px;
     height: 3px;
-    background-color: #659DBD;
+    background-color: var(--backgroundColor1);
     border-style: none;
 }
 
-.projects--details {
+.projects--details-memes, .projects--details-sorting {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    color: #838383;
+    color: var(--textColor);
     text-align: center;
 }
 
-.projects--button {
+.projects--button-memes, .projects--button-sorting {
     content: url(images/dropDown.png);
     height: 10px;
     padding-left: 5px;
     padding-top: 5px;
 }
 
-.projects--details-title {
+.projects--details-title-memes, .projects--details-title-sorting {
     font-size: 1.3em;
-    color: #659DBD;
+    color: var(--backgroundColor1);
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     display: none;
 }
 
-.projects--details-text {
+.projects--details-text-memes, .projects--details-text-sorting {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    color: #838383;
+    color: var(--textColor);
     margin-top: 10px;
     width: 300px;
     margin: auto;
@@ -177,11 +188,11 @@ body {
     display: none;
 }
 
-.projects--details-text a {
-    color: #659DBD;
+.projects--details-text-memes a, .projects--details-text-sorting a {
+    color: var(--backgroundColor1);
 }
 
-.click:hover {
+.click-memes:hover, .click-sorting:hover {
     cursor: pointer;
 }
 
@@ -190,8 +201,9 @@ body {
 .footer {
     width: 100%;
     height: 80px;
-    background-color: #659DBD;
+    background-color: var(--backgroundColor1);
     margin-top: 40px;
+    padding-bottom: 10px;
 }
 
 .footer--items {
