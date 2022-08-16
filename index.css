@@ -83,7 +83,17 @@ body {
 .main {
     width: 50%;
     margin: auto;
-    display: block;
+    display: block; 
+}
+
+.main h1 {
+    font-family: sans-serif;
+    color: rgb(197, 45, 45);
+}
+
+.main h1 a {
+    text-decoration: none;
+    color: rgb(197, 45, 45);
 }
 
 .main--about-title {
